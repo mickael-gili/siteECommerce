@@ -1,0 +1,5 @@
+Article 1 : ; 2; 10; 20
+Article 2 : ; 2; 10; 20
+Article 3 : ; 2; 10; 20
+Article 4 : ; 2; 10; 20
+Article 5 : ; 2; 10; 20
