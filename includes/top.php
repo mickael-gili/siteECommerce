@@ -97,9 +97,7 @@
                         <li id="facture" class=''>
                            <a href="facture.php">facture</a>
                        </li>
-                       <li id="facture" class=''>
-                           <a href="facture.php">Git</a>
-                       </li>
+
                        
                    </ul><!-- nav navbar-nav left Finish -->
                    

@@ -1,3 +1,9 @@
+<?php 
+
+include("includes/db.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -45,29 +51,51 @@
                
                <div class="carousel-inner"><!-- carousel-inner Begin -->
                    
-                   <div class="item active">
-                       
-                       <img src="admin_area/slides_images/slide-11.jpg" alt="Slider Image 1">
-                       
-                   </div>
+               <?php 
                    
-                   <div class="item">
-                       
-                       <img src="admin_area/slides_images/slide-22.jpg" alt="Slider Image 2">
-                       
-                   </div>
+                   $get_slides = "select * from slider LIMIT 0,1";
                    
-                   <div class="item">
-                       
-                       <img src="admin_area/slides_images/slide-33.jpg" alt="Slider Image 3">
-                       
-                   </div>
+                   $run_slides = mysqli_query($con,$get_slides);
                    
-                   <div class="item">
+                   while($row_slides=mysqli_fetch_array($run_slides)){
                        
-                       <img src="admin_area/slides_images/slide-44.jpg" alt="Slider Image 4">
+                       $slide_name = $row_slides['slide_name'];
+                       $slide_image = $row_slides['slide_image'];
                        
-                   </div>
+                       echo "
+                       
+                       <div class='item active'>
+                       
+                       <img src='admin_area/slides_images/$slide_image'>
+                       
+                       </div>
+                       
+                       ";
+                       
+                   }
+                   
+                   $get_slides = "select * from slider LIMIT 1,3";
+                   
+                   $run_slides = mysqli_query($con,$get_slides);
+                   
+                   while($row_slides=mysqli_fetch_array($run_slides)){
+                       
+                       $slide_name = $row_slides['slide_name'];
+                       $slide_image = $row_slides['slide_image'];
+                       
+                       echo "
+                       
+                       <div class='item'>
+                       
+                       <img src='admin_area/slides_images/$slide_image'>
+                       
+                       </div>
+                       
+                       ";
+                       
+                   }
+                   
+                   ?>
                    
                </div><!-- carousel-inner Finish -->
                
