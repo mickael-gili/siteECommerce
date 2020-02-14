@@ -52,8 +52,7 @@
                     <br/>Brest
                     <br/>06 48 53 67 60
                     <br/>mgiliberto.gmickael@gmail.com
-                    <br/><strong>Mr Giliberto
-                    </strong>
+                    <br/><strong>Mr Giliberto</strong>
                     
                 </p><!-- p Finish -->
                 

@@ -40,7 +40,7 @@
            
            <div class="navbar-header"><!-- navbar-header Begin -->
                
-               <a href="index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
+               <a href="../index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
                    
                    <img src="images/logo-du-site.jpg" alt="Mick-dev-Store Logo" class="hidden-xs"width="55px">
                    

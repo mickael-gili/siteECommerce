@@ -24,7 +24,7 @@
             
             <li class="<?php if(isset($_GET['my_orders'])){ echo "active"; } ?>">
                 
-                <a href="my_account.php?my_orders">
+                <a href="mon_compte.php?my_orders">
                     
                     <i class="fa fa-list"></i> My Orders
                     
@@ -34,7 +34,7 @@
             
             <li class="<?php if(isset($_GET['pay_offline'])){ echo "active"; } ?>">
                 
-                <a href="my_account.php?pay_offline">
+                <a href="mon_compte.php?pay_offline">
                     
                     <i class="fa fa-bolt"></i> Pay Offline
                     
@@ -44,7 +44,7 @@
             
             <li class="<?php if(isset($_GET['edit_account'])){ echo "active"; } ?>">
                 
-                <a href="my_account.php?edit_account">
+                <a href="mon_compte.php?edit_account">
                     
                     <i class="fa fa-pencil"></i> Edit Account
                     
@@ -54,7 +54,7 @@
             
             <li class="<?php if(isset($_GET['change_pass'])){ echo "active"; } ?>">
                 
-                <a href="my_account.php?change_pass">
+                <a href="mon_compte.php?change_pass">
                     
                     <i class="fa fa-user"></i> Change Password
                     
@@ -64,7 +64,7 @@
             
             <li class="<?php if(isset($_GET['delete_account'])){ echo "active"; } ?>">
                 
-                <a href="my_account.php?delete_account">
+                <a href="mon_compte.php?delete_account">
                     
                     <i class="fa fa-trash-o"></i> Delete Account
                     

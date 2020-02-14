@@ -6,19 +6,19 @@
                <h4>Pages</h4>
                 
                 <ul><!-- ul Begin -->
-                    <li><a href="../cart.php">Shopping Cart</a></li>
-                    <li><a href="../contact.php">Contact Us</a></li>
-                    <li><a href="../shop.php">Shop</a></li>
-                    <li><a href="my_account.php">My Account</a></li>
+                    <li><a href="cart.php">Mon panier</a></li>
+                    <li><a href="contact.php">Nous contacter</a></li>
+                    <li><a href="shop.php">Shop</a></li>
+                    <li><a href="checkout.php">Mon compte</a></li>
                 </ul><!-- ul Finish -->
                 
                 <hr>
                 
-                <h4>User Section</h4>
+                <h4>Section utilisateur</h4>
                 
                 <ul><!-- ul Begin -->
-                    <li><a href="../checkout.php">Login</a></li>
-                    <li><a href="../customer_register.php">Register</a></li>
+                    <li><a href="checkout.php">Se connecter</a></li>
+                    <li><a href="customer_register.php">S'inscrire</a></li>
                 </ul><!-- ul Finish -->
                 
                 <hr class="hidden-md hidden-lg hidden-sm">
@@ -27,14 +27,14 @@
             
             <div class="com-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin -->
                 
-                <h4>Top Products Categories</h4>
+                <h4>Catégories en top des ventes</h4>
                 
                 <ul><!-- ul Begin -->
-                    <li><a href="#">Jackets</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Coats</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Super star 2020</a></li>
+                    <li><a href="#">Predator 20</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Basketball</a></li>
                 </ul><!-- ul Finish -->
                 
                 <hr class="hidden-md hidden-lg">
@@ -43,20 +43,20 @@
             
             <div class="col-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin -->
                 
-                <h4>Find Us</h4>
+                <h4>Qui sommes nous ?</h4>
                 
                 <p><!-- p Start -->
                     
-                    <strong>M-Dev Media inc.</strong>
-                    <br/>Cibubur
-                    <br/>Ciracas
-                    <br/>0818-0683-3157
-                    <br/>mugianto4th@gmail.com
-                    <br/><strong>MrGhie</strong>
+                    <strong>Mick-Dev Media inc.</strong>
+                    <br/>29200
+                    <br/>Brest
+                    <br/>06 48 53 67 60
+                    <br/>mgiliberto.gmickael@gmail.com
+                    <br/><strong>Mr Giliberto</strong>
                     
                 </p><!-- p Finish -->
                 
-                <a href="../contact.php">Check Our Contact Page</a>
+                <a href="contact.php">Page de contact</a>
                 
                 <hr class="hidden-md hidden-lg">
                 
@@ -64,10 +64,10 @@
             
             <div class="col-sm-6 col-md-3">
                 
-                <h4>Get The News</h4>
+                <h4>Nouveautés</h4>
                 
                 <p class="text-muted">
-                    Dont miss our latest update products.
+                    Ne rate pas nos derniers produits
                 </p>
                 
                 <form action="" method="post"><!-- form begin -->
@@ -86,7 +86,7 @@
                 
                 <hr>
                 
-                <h4>Keep In Touch</h4>
+                <h4>Restons en contact</h4>
                 
                 <p class="social">
                     <a href="#" class="fa fa-facebook"></a>
@@ -106,12 +106,12 @@
     <div class="container"><!-- container Begin -->
         <div class="col-md-6"><!-- col-md-6 Begin -->
             
-            <p class="pull-left">&copy; 2018 M-Dev Store All Rights Reserve</p>
+            <p class="pull-left">&copy; 2018 Mick-Dev Store All Rights Reserve</p>
             
         </div><!-- col-md-6 Finish -->
         <div class="col-md-6"><!-- col-md-6 Begin -->
             
-            <p class="pull-right">Theme by: <a href="#">MrGhie</a></p>
+            <p class="pull-right">Theme by: <a href="#">Mr Giliberto</a></p>
             
         </div><!-- col-md-6 Finish -->
     </div><!-- container Finish -->
