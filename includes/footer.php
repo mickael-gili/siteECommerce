@@ -30,11 +30,37 @@
                 <h4>Catégories en top des ventes</h4>
                 
                 <ul><!-- ul Begin -->
-                    <li><a href="#">Super star 2020</a></li>
-                    <li><a href="#">Predator 20</a></li>
-                    <li><a href="#">Football</a></li>
-                    <li><a href="#">Running</a></li>
-                    <li><a href="#">Basketball</a></li>
+
+                    <?php 
+                        
+                        $get_p_cats = "select * from product_categories";
+                    
+                        $run_p_cats = mysqli_query($con, $get_p_cats);
+                    
+                        while($row_p_cats=mysqli_fetch_array($run_p_cats)){
+                            
+                            $p_cat_id = $row_p_cats['p_cat_id'];
+                            
+                            $p_cat_title = $row_p_cats['p_cat_title'];
+                            
+                            echo "
+                            
+                                <li>
+                                
+                                    <a href='shop.php?p_cat=$p_cat_id'>
+                                    
+                                        $p_cat_title
+                                    
+                                    </a>
+                                
+                                </li>
+                            
+                            ";
+                            
+                        }
+                    
+                    ?>
+
                 </ul><!-- ul Finish -->
                 
                 <hr class="hidden-md hidden-lg">
@@ -77,7 +103,7 @@
                         
                         <span class="input-group-btn"><!-- input-group-btn begin -->
                             
-                            <input type="submit" value="subscribe" class="btn btn-default">
+                            <input type="submit" value="s'inscrire" class="btn btn-default">
                             
                         </span><!-- input-group-btn Finish -->
                         
