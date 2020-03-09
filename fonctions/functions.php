@@ -1,6 +1,65 @@
 <?php 
 
 $db = mysqli_connect("localhost","root","","ecom_store");
+
+
+/// begin getRealIpUser functions ///
+
+function getRealIpUser(){
+    
+    switch(true){
+            
+            case(!empty($_SERVER['HTTP_X_REAL_IP'])) : return $_SERVER['HTTP_X_REAL_IP'];
+            case(!empty($_SERVER['HTTP_CLIENT_IP'])) : return $_SERVER['HTTP_CLIENT_IP'];
+            case(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) : return $_SERVER['HTTP_X_FORWARDED_FOR'];
+            
+            default : return $_SERVER['REMOTE_ADDR'];
+            
+    }
+    
+}
+
+/// begin add_panier functions ///
+
+function add_panier(){
+    
+    global $db;
+    
+    if(isset($_GET['add_panier'])){
+        
+        $ip_add = getRealIpUser();
+        
+        $p_id = $_GET['add_panier'];
+        
+        $product_qty = $_POST['product_qty'];
+        
+        
+        $check_product = "select * from panier where ip_add='$ip_add' AND p_id='$p_id'";
+        
+        $run_check = mysqli_query($db,$check_product);
+        
+        if(mysqli_num_rows($run_check)>0){
+            
+            echo "<script>alert('Ce produit à déjà été ajouté à votre panier')</script>";
+            echo "<script>window.open('details.php?pro_id=$p_id','_self')</script>";
+            
+        }else{
+            
+            $query = "insert into panier (p_id,ip_add,qty) values ('$p_id','$ip_add','$product_qty')";
+            
+            $run_query = mysqli_query($db,$query);
+            
+            echo "<script>window.open('details.php?pro_id=$p_id','_self')</script>";
+            
+        }
+        
+    }
+    
+}
+
+/// finish add_panier functions ///
+
+/// finish getRealIpUser functions ///
 ////debut fonction getpro
 function getPro(){
     
@@ -60,7 +119,7 @@ function getPro(){
                     
                         <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                            <i class='fa fa-shopping-cart'></i> Ajouter au panier
+                            <i class='fa fa-shopping-panier'></i> Ajouter au panier
 
                         </a>
                     
@@ -239,7 +298,7 @@ function getpcatpro(){
                     
                         <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                            <i class='fa fa-shopping-cart'></i> Ajouter au panier
+                            <i class='fa fa-shopping-panier'></i> Ajouter au panier
 
                         </a>
                     
@@ -355,7 +414,7 @@ function getcatpro(){
 
                         </p>
 
-                            <p class='buttons'>
+                            <p class='button'>
 
                                 <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
 
@@ -365,7 +424,7 @@ function getcatpro(){
 
                                 <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                                <i class='fa fa-shopping-cart'></i> Ajouter au panier
+                                <i class='fa fa-shopping-panier'></i> Ajouter au panier
 
                                 </a>
 

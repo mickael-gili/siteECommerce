@@ -141,7 +141,7 @@ include("fonctions/functions.php");
 
                                                 </p>
 
-                                                <p class='buttons'>
+                                                <p class='button'>
 
                                                     <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
 

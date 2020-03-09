@@ -76,8 +76,10 @@ include("fonctions/functions.php");
                    <div class="col-sm-6"><!-- col-sm-6 Begin -->
                        <div class="box"><!-- box Begin -->
                            <h1 class="text-center"><?php echo $pro_title; ?></h1>
-                           
-                           <form action="index.php?add_cart=<?php echo $pro_id; ?>" class="form-horizontal" method="post"><!-- form-horizontal Begin -->
+
+                            <?php add_panier(); ?>
+                                          
+                            <form action="details.php?add_panier=<?php echo $product_id; ?>" class="form-horizontal" method="post"><!-- form-horizontal Begin -->
                                <div class="form-group"><!-- form-group Begin -->
                                    <label for="" class="col-md-5 control-label">Quatité</label>
                                    
@@ -145,7 +147,7 @@ include("fonctions/functions.php");
                    
                     <?php 
                    
-                    $get_products = "select * from products order by 1 DESC LIMIT 1,3";
+                    $get_products = "select * from products order by rand() LIMIT 0,3";
                   
                     $run_products = mysqli_query($con,$get_products);
                   
