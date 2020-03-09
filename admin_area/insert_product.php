@@ -12,10 +12,17 @@ include("includes/db.php");
     <title> Insert Products </title>
     <link rel="stylesheet" href="css/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
     
 </head>
 <body>
+
+    <?php 
     
+    include("includes/top.php");
+    
+    ?>
+
 <div class="row"><!-- row Begin -->
     
     <div class="col-lg-12"><!-- col-lg-12 Begin -->

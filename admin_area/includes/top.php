@@ -14,16 +14,16 @@
                <ul class="menu"><!-- cmenu Begin -->
                    
                    <li id="custom_register" class=''>
-                       <a href="customer_register.php">S'inscrire</a>
+                       <a href="../customer_register.php">S'inscrire</a>
                    </li>
                    <li id="compte" class=''>
-                       <a href="customer/mon_compte.php">Mon compte</a>
+                       <a href="../customer/mon_compte.php">Mon compte</a>
                    </li>
                    <li id="panier" class=''>
-                       <a href="panier.php">Mon panier</a>
+                       <a href="../panier.php">Mon panier</a>
                    </li>
                    <li id="checkout" class=''>
-                       <a href="mon_compte.php">Se connecter</a>
+                       <a href="../customer/mon_compte.php">Se connecter</a>
                    </li>
                    
                </ul><!-- menu Finish -->
@@ -40,9 +40,9 @@
            
            <div class="navbar-header"><!-- navbar-header Begin -->
                
-               <a href="index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
+               <a href="../index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
                    
-                   <img src="images/logo-du-site.jpg" alt="Mick-dev-Store Logo" class="hidden-xs"width="55px">
+                   <img src="../images/logo-du-site.jpg" alt="Mick-dev-Store Logo" class="hidden-xs"width="55px">
                    
                </a><!-- navbar-brand home Finish -->
                
@@ -71,36 +71,20 @@
                    <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
                        
                        <li id="index" class=''>
-                           <a href="index.php">Accueil</a>
+                           <a href="../index.php">Accueil</a>
                        </li>
                        <li id="shop" class=''>
-                           <a href="shop.php">Shop</a>
+                           <a href="../shop.php">Shop</a>
                        </li>
-                       <li id="compte" class=''>
-                           <a href="customer/mon_compte.php">Mon compte</a>
+                       <li id="mon_compte" class=''>
+                           <a href="../customer/mon_compte.php">Mon compte</a>
                        </li>
                        <li id="panier" class=''>
-                           <a href="panier.php"> Mon panier</a>
+                           <a href="../panier.php"> Mon panier</a>
                        </li>
                        <li id="contact" class=''>
-                           <a href="contact.php">Nous contacter</a>
+                           <a href="../contact.php">Nous contacter</a>
                        </li>
-                       <li id="devise" class=''>
-                           <a href="devise.php">Devise</a>
-                       </li>
-                        <li id="relais" class=''>
-                           <a href="do_recherche_relais.php">Relais</a>
-                       </li>
-                        <li id="relais_results" class=''>
-                           <a href="results.php">resultats</a>
-                       </li>
-                        <li id="facture" class=''>
-                           <a href="facture.php">facture</a>
-                       </li>
-                        <li id="insert_product" class=''>
-                           <a href="admin_area/insert_product.php">Ajout</a>
-                       </li>
-
                        
                    </ul><!-- nav navbar-nav left Finish -->
                    
