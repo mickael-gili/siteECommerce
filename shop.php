@@ -145,13 +145,13 @@ include("fonctions/functions.php");
 
                                                     <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
 
-                                                        View Details
+                                                        Voir détails
 
                                                     </a>
 
                                                     <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
-                                                        <i class='fa fa-shopping-cart'></i> Add To Cart
+                                                        <i class='fa fa-shopping-cart'></i> Ajouter au panier
 
                                                     </a>
 
@@ -226,7 +226,10 @@ include("fonctions/functions.php");
                    </ul><!-- pagination Finish -->
                </center>
                 
-                <?php getpcatpro(); ?>  
+                <?php 
+                getpcatpro();
+                getcatpro();
+                ?>  
                
            </div><!-- col-md-9 Finish -->
            

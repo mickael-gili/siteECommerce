@@ -34,6 +34,11 @@ include("fonctions/functions.php");
                    <li>
                        Shop
                    </li>
+
+                   <li>
+                       <a href="shop.php?p_cat=<?php echo $p_cat_id; ?>"><?php echo $p_cat_title; ?></a>
+                   </li>
+                   <li> <?php echo $pro_title; ?> </li>
                </ul><!-- breadcrumb Finish -->
                
            </div><!-- col-md-12 Finish -->
@@ -52,34 +57,17 @@ include("fonctions/functions.php");
                <div id="productMain" class="row"><!-- row Begin -->
                    <div class="col-sm-6"><!-- col-sm-6 Begin -->
                        <div id="mainImage"><!-- #mainImage Begin -->
-                           <div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- carousel slide Begin -->
-                               <ol class="carousel-indicators"><!-- carousel-indicators Begin -->
-                                   <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
-                                   <li data-target="#myCarousel" data-slide-to="1"></li>
-                                   <li data-target="#myCarousel" data-slide-to="2"></li>
-                               </ol><!-- carousel-indicators Finish -->
+                           <div ><!-- carousel slide Begin -->
+
                                
                                <div class="carousel-inner">
                                    <div class="item active">
-                                       <center><img class="img-responsive" src="admin_area/product_images/Product-3.jpg" alt="Product 3"></center>
+                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $pro_img1; ?>" alt="Product"></center>
                                    </div>
-                                   <div class="item">
-                                       <center><img class="img-responsive" src="admin_area/product_images/Product-4.jpg" alt="Product 4"></center>
-                                   </div>
-                                   <div class="item">
-                                       <center><img class="img-responsive" src="admin_area/product_images/Product-5.jpg" alt="Product 5"></center>
-                                   </div>
+
                                </div>
                                
-                               <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
-                                   <span class="glyphicon glyphicon-chevron-left"></span>
-                                   <span class="sr-only">Retour</span>
-                               </a><!-- left carousel-control Finish -->
-                               
-                               <a href="#myCarousel" class="right carousel-control" data-slide="next"><!-- right carousel-control Begin -->
-                                   <span class="glyphicon glyphicon-chevron-right"></span>
-                                   <span class="sr-only">Retour</span>
-                               </a><!-- right carousel-control Finish -->
+ 
                                
                            </div><!-- carousel slide Finish -->
                        </div><!-- mainImage Finish -->
@@ -135,21 +123,11 @@ include("fonctions/functions.php");
                            
                            <div class="col-xs-4"><!-- col-xs-4 Begin -->
                                <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/product-1.jpg" alt="product 1" class="img-responsive">
+                                   <img src="admin_area/product_images/<?php echo $pro_img1; ?>" alt="product" class="img-responsive">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
                            
-                           <div class="col-xs-4"><!-- col-xs-4 Begin -->
-                               <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/product-2.jpg" alt="product 2" class="img-responsive">
-                               </a><!-- thumb Finish -->
-                           </div><!-- col-xs-4 Finish -->
-                           
-                           <div class="col-xs-4"><!-- col-xs-4 Begin -->
-                               <a href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/Product-4.jpg" alt="product 4" class="img-responsive">
-                               </a><!-- thumb Finish -->
-                           </div><!-- col-xs-4 Finish -->
+
                            
                        </div><!-- row Finish -->
                        
