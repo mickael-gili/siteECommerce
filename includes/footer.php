@@ -47,12 +47,12 @@
                 
                 <p><!-- p Start -->
                     
-                    <strong>Mick&Lesly</strong>
+                    <strong>Mick&Less</strong>
                     <br/>29200
                     <br/>Brest
                     <br/>06 48 53 67 60
                     <br/>mgiliberto.gmickael@gmail.com
-                    <br/><strong>Mr Giliberto MM Mgn</strong>
+                    <br/><strong>Mr Giliberto et Mme Mongin</strong>
                     
                 </p><!-- p Finish -->
                 
@@ -106,12 +106,12 @@
     <div class="container"><!-- container Begin -->
         <div class="col-md-6"><!-- col-md-6 Begin -->
             
-            <p class="pull-left">&copy; 2018 Mick&Lesly Store All Rights Reserve</p>
+            <p class="pull-left">&copy; 2018 Mick&Less Store All Rights Reserve</p>
             
         </div><!-- col-md-6 Finish -->
         <div class="col-md-6"><!-- col-md-6 Begin -->
             
-            <p class="pull-right">Theme by: <a href="#">Mr Giliberto MM Mgn</a></p>
+            <p class="pull-right">Theme by: <a href="#">Mr Giliberto et Mme Mongin</a></p>
             
         </div><!-- col-md-6 Finish -->
     </div><!-- container Finish -->

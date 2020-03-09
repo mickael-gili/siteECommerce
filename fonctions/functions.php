@@ -2,6 +2,7 @@
 
 $db = mysqli_connect("localhost","root","","ecom_store");
 
+///////begin get products
 function getPro(){
     
     global $db;
@@ -77,5 +78,9 @@ function getPro(){
     }
     
 }
+
+////finish get products
+
+function getPcats()
 
 ?>
