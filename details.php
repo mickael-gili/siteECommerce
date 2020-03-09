@@ -75,9 +75,9 @@ include("fonctions/functions.php");
                    
                    <div class="col-sm-6"><!-- col-sm-6 Begin -->
                        <div class="box"><!-- box Begin -->
-                           <h1 class="text-center">Chaussure homme</h1>
+                           <h1 class="text-center"><?php echo $pro_title; ?></h1>
                            
-                           <form action="details.php" class="form-horizontal" method="post"><!-- form-horizontal Begin -->
+                           <form action="index.php?add_cart=<?php echo $pro_id; ?>" class="form-horizontal" method="post"><!-- form-horizontal Begin -->
                                <div class="form-group"><!-- form-group Begin -->
                                    <label for="" class="col-md-5 control-label">Quatité</label>
                                    
@@ -94,24 +94,8 @@ include("fonctions/functions.php");
                                    
                                </div><!-- form-group Finish -->
                                
-                               <div class="form-group"><!-- form-group Begin -->
-                                   <label class="col-md-5 control-label">Tailles</label>
-                                   
-                                   <div class="col-md-7"><!-- col-md-7 Begin -->
-                                       
-                                       <select name="product_size" class="form-control"><!-- form-control Begin -->
-                                          
-                                           <option>Selectionner une taille</option>
-                                           <option>S</option>
-                                           <option>M</option>
-                                           <option>L</option>
-                                           
-                                       </select><!-- form-control Finish -->
-                                       
-                                   </div><!-- col-md-7 Finish -->
-                               </div><!-- form-group Finish -->
                                
-                               <p class="price">$50</p>
+                               <p class="price"><?php echo $pro_price; ?> €</p>
                                
                                <p class="text-center buttons"><button class="btn btn-primary i fa fa-shopping-cart"> Ajouter au panier</button></p>
                                
@@ -142,17 +126,11 @@ include("fonctions/functions.php");
                    
                    <p>
                        
-                       Voici un produit qui va vous plaire
+                        <?php echo $pro_desc; ?>
                        
                    </p>
                    
-                       <h4>Tailles</h4>
-                       
-                       <ul>
-                           <li>S</li>
-                           <li>M</li>
-                           <li>L</li>
-                       </ul>  
+ 
                        
                        <hr>
                    
@@ -165,53 +143,51 @@ include("fonctions/functions.php");
                        </div><!-- box same-height headline Finish -->
                    </div><!-- col-md-3 col-sm-6 Finish -->
                    
-                   <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
-                       <div class="product same-height"><!-- product same-height Begin -->
-                           <a href="details.php">
-                               <img class="img-responsive" src="admin_area/product_images/Product-6a.jpg" alt="Product 6">
-                            </a>
-                            
-                            <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">Chaussure femme</a></h3>
-                                
-                                <p class="price">40 €</p>
-                                
-                            </div><!-- text Finish -->
-                            
-                        </div><!-- product same-height Finish -->
-                   </div><!-- col-md-3 col-sm-6 center-responsive Finish -->
+                    <?php 
                    
-                   <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
-                       <div class="product same-height"><!-- product same-height Begin -->
-                           <a href="details.php">
-                               <img class="img-responsive" src="admin_area/product_images/Product-5a.jpg" alt="Product 6">
-                            </a>
-                            
-                            <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">Chaussure femme</a></h3>
-                                
-                                <p class="price">45 €</p>
-                                
-                            </div><!-- text Finish -->
-                            
-                        </div><!-- product same-height Finish -->
-                   </div><!-- col-md-3 col-sm-6 center-responsive Finish -->
-                   
-                   <div class="col-md-3 col-sm-6 center-responsive"><!-- col-md-3 col-sm-6 center-responsive Begin -->
-                       <div class="product same-height"><!-- product same-height Begin -->
-                           <a href="details.php">
-                               <img class="img-responsive" src="admin_area/product_images/Product-4a.jpg" alt="Product 6">
-                            </a>
-                            
-                            <div class="text"><!-- text Begin -->
-                                <h3><a href="details.php">Chaussures Femme</a></h3>
-                                
-                                <p class="price">50 €</p>
-                                
-                            </div><!-- text Finish -->
-                            
-                        </div><!-- product same-height Finish -->
-                   </div><!-- col-md-3 col-sm-6 center-responsive Finish -->
+                    $get_products = "select * from products order by 1 DESC LIMIT 1,3";
+                  
+                    $run_products = mysqli_query($con,$get_products);
+                  
+                    while($row_products=mysqli_fetch_array($run_products)){
+                      
+                      $pro_id = $row_products['product_id'];
+                      
+                      $pro_title = $row_products['product_title'];
+                      
+                      $pro_img1 = $row_products['product_img1'];
+                      
+                      $pro_price = $row_products['product_price'];
+                      
+                      echo "
+                      
+                       <div class='col-md-3 col-sm-6 center-responsive'>
+                       
+                           <div class='product same-height'>
+                           
+                               <a href='details.php?pro_id=$pro_id'>
+                               
+                                   <img class='img-responsive' src='admin_area/product_images/$pro_img1'>
+                               
+                               </a>
+                               
+                               <div class='text'>
+                               
+                                   <h3> <a href='details.php?pro_id=$pro_id'> $pro_title </a> </h3>
+                                   
+                                   <p class='price'> $pro_price € </p>
+                               
+                               </div>
+                           
+                           </div>
+                       
+                       </div>
+                      
+                      ";
+                      
+                    }
+                  
+                    ?>
                    
                </div><!-- #row same-heigh-row Finish -->
                
