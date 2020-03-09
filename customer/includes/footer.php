@@ -9,7 +9,7 @@
                     <li><a href="cart.php">Mon panier</a></li>
                     <li><a href="contact.php">Nous contacter</a></li>
                     <li><a href="shop.php">Shop</a></li>
-                    <li><a href="checkout.php">Mon compte</a></li>
+                    <li><a href="mon_compte.php">Mon compte</a></li>
                 </ul><!-- ul Finish -->
                 
                 <hr>
@@ -17,7 +17,7 @@
                 <h4>Section utilisateur</h4>
                 
                 <ul><!-- ul Begin -->
-                    <li><a href="checkout.php">Se connecter</a></li>
+                    <li><a href="mon_compte.php">Se connecter</a></li>
                     <li><a href="customer_register.php">S'inscrire</a></li>
                 </ul><!-- ul Finish -->
                 

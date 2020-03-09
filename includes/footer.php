@@ -17,7 +17,7 @@
                 <h4>Section utilisateur</h4>
                 
                 <ul><!-- ul Begin -->
-                    <li><a href="checkout.php">Se connecter</a></li>
+                    <li><a href="mon_compte.php">Se connecter</a></li>
                     <li><a href="customer_register.php">S'inscrire</a></li>
                 </ul><!-- ul Finish -->
                 

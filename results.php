@@ -16,6 +16,12 @@
 </head>
 <body>
 
+    <?php 
+    
+    include("includes/top.php");
+    
+    ?>
+
 <h1>Voici les points relais autour de vous</h1>
 <div class="container">
 

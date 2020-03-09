@@ -23,7 +23,7 @@
                        <a href="panier.php">Mon panier</a>
                    </li>
                    <li id="checkout" class=''>
-                       <a href="checkout.php">Se connecter</a>
+                       <a href="mon_compte.php">Se connecter</a>
                    </li>
                    
                </ul><!-- menu Finish -->
