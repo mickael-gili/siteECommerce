@@ -55,259 +55,67 @@ include("fonctions/functions.php");
         </div><!-- col-md-3 Finish -->
            
            <div class="col-md-9"><!-- col-md-9 Begin -->
-               <div class="box"><!-- box Begin -->
-                   <h1>Shop</h1>
-                   <p>
-                       Les meilleurs chaussures du marché à petit prix!
-                   </p>
-               </div><!-- box Finish -->
+                <?php
+                
+                if (!isset($_GET['p_cat'])){
+
+                    if (!isset($_GET['cat'])){
+
+                        echo"
+                        <div class='box'><!-- box Begin -->
+                        <h1>Shop</h1>
+                        <p>
+                            Les meilleurs huiles du marché à petit prix!
+                        </p>
+                        </div><!-- box Finish -->
+                        ";
+                    }
+                }
+               
+               ?>
                
                <div class="row"><!-- row Begin -->
-                   <div class="col-md-4 col-sm-6 center-responsive"><!-- col-md-4 col-sm-6 center-responsive Begin -->
-                       
-                       <div class="product"><!-- product Begin -->
-                   
-                        <a href="details.php">
-                            
-                            <img class="img-responsive" src="admin_area/product_images/product-1.jpg" alt="Product 1">
-                            
-                        </a>
-                   
-                   <div class="text"><!-- text Begin -->
-                       
-                       <h3>
-                           <a href="details.php">
-                               Mick-Dev Chaussures femme
-                           </a>
-                       </h3>
-                       
-                       <p class="price">30 €</p>
-                       
-                       <p class="button">
-                           
-                           <a href="details.php" class="btn btn-default">Voir les détails</a>
-                           
-                           <a href="details.php" class="btn btn-primary">
-                               
-                               <i class="fa fa-shopping-cart">
-                                   Ajouter au panier
-                               </i>
-                               
-                           </a>
-                           
-                       </p>
-                       
-                   </div><!-- text Finish -->
-                   
-               </div><!-- product Finish -->
-                       
-                   </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
-                   <div class="col-md-4 col-sm-6 center-responsive"><!-- col-md-4 col-sm-6 center-responsive Begin -->
-                       
-                       <div class="product"><!-- product Begin -->
-                   
-                   <a href="details.php">
-                       
-                       <img class="img-responsive" src="admin_area/product_images/product-2.jpg" alt="Product 2">
-                       
-                   </a>
-                   
-                   <div class="text"><!-- text Begin -->
-                       
-                       <h3>
-                           <a href="details.php">
-                               Mick-Dev chaussures femme
-                           </a>
-                       </h3>
-                       
-                       <p class="price">30 €</p>
-                       
-                       <p class="button">
-                           
-                           <a href="details.php" class="btn btn-default">voir les détails</a>
-                           
-                           <a href="details.php" class="btn btn-primary">
-                               
-                               <i class="fa fa-shopping-cart">
-                                   Ajouter au panier
-                               </i>
-                               
-                           </a>
-                           
-                       </p>
-                       
-                   </div><!-- text Finish -->
-                   
-               </div><!-- product Finish -->
-                       
-                   </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
-                   <div class="col-md-4 col-sm-6 center-responsive"><!-- col-md-4 col-sm-6 center-responsive Begin -->
-                       
-                       <div class="product"><!-- product Begin -->
-                   
-                   <a href="details.php">
-                       
-                       <img class="img-responsive" src="admin_area/product_images/product-3.jpg" alt="Product 3">
-                       
-                   </a>
-                   
-                   <div class="text"><!-- text Begin -->
-                       
-                       <h3>
-                           <a href="details.php">
-                               Mick-Dev chaussures femme
-                           </a>
-                       </h3>
-                       
-                       <p class="price">30 €</p>
-                       
-                       <p class="button">
-                           
-                           <a href="details.php" class="btn btn-default">voir les détails</a>
-                           
-                           <a href="details.php" class="btn btn-primary">
-                               
-                               <i class="fa fa-shopping-cart">
-                                   Ajouter au panier
-                               </i>
-                               
-                           </a>
-                           
-                       </p>
-                       
-                   </div><!-- text Finish -->
-                   
-               </div><!-- product Finish -->
-                       
-                   </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
-                   <div class="col-md-4 col-sm-6 center-responsive"><!-- col-md-4 col-sm-6 center-responsive Begin -->
-                       
-                       <div class="product"><!-- product Begin -->
-                   
-                   <a href="details.php">
-                       
-                       <img class="img-responsive" src="admin_area/product_images/product-4.jpg" alt="Product 4">
-                       
-                   </a>
-                   
-                   <div class="text"><!-- text Begin -->
-                       
-                       <h3>
-                           <a href="details.php">
-                               Mick-Dev chaussures femme
-                           </a>
-                       </h3>
-                       
-                       <p class="price">30 €</p>
-                       
-                       <p class="button">
-                           
-                           <a href="details.php" class="btn btn-default">voir les détails</a>
-                           
-                           <a href="details.php" class="btn btn-primary">
-                               
-                               <i class="fa fa-shopping-cart">
-                                   Ajouter au panier
-                               </i>
-                               
-                           </a>
-                           
-                       </p>
-                       
-                   </div><!-- text Finish -->
-                   
-               </div><!-- product Finish -->
-                       
-                   </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
-                   <div class="col-md-4 col-sm-6 center-responsive"><!-- col-md-4 col-sm-6 center-responsive Begin -->
-                       
-                       <div class="product"><!-- product Begin -->
-                   
-                   <a href="details.php">
-                       
-                       <img class="img-responsive" src="admin_area/product_images/product-5.jpg" alt="Product 5">
-                       
-                   </a>
-                   
-                   <div class="text"><!-- text Begin -->
-                       
-                       <h3>
-                           <a href="details.php">
-                               Mick-Dev chaussures femme
-                           </a>
-                       </h3>
-                       
-                       <p class="price">30 €</p>
-                       
-                       <p class="button">
-                           
-                           <a href="details.php" class="btn btn-default">voir les détails</a>
-                           
-                           <a href="details.php" class="btn btn-primary">
-                               
-                               <i class="fa fa-shopping-cart">
-                                   Ajouter au panier
-                               </i>
-                               
-                           </a>
-                           
-                       </p>
-                       
-                   </div><!-- text Finish -->
-                   
-               </div><!-- product Finish -->
-                       
-                   </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
-                   <div class="col-md-4 col-sm-6 center-responsive"><!-- col-md-4 col-sm-6 center-responsive Begin -->
-                       
-                       <div class="product"><!-- product Begin -->
-                   
-                   <a href="details.php">
-                       
-                       <img class="img-responsive" src="admin_area/product_images/product-6.jpg" alt="Product 6">
-                       
-                   </a>
-                   
-                   <div class="text"><!-- text Begin -->
-                       
-                       <h3>
-                           <a href="details.php">
-                               Mick-Dev chaussures femme
-                           </a>
-                       </h3>
-                       
-                       <p class="price">30 €</p>
-                       
-                       <p class="button">
-                           
-                           <a href="details.php" class="btn btn-default">voir les détails</a>
-                           
-                           <a href="details.php" class="btn btn-primary">
-                               
-                               <i class="fa fa-shopping-cart">
-                                   Ajouter au panier
-                               </i>
-                               
-                           </a>
-                           
-                       </p>
-                       
-                   </div><!-- text Finish -->
-                   
-               </div><!-- product Finish -->
-                       
-                   </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
+
+               <?php
+                
+                if (!isset($_GET['p_cat'])){
+
+                    if (!isset($_GET['cat'])){
+
+
+                    }
+                }
+               
+               ?>
+
                </div><!-- row Finish -->
                
                <center>
                    <ul class="pagination">
-                       <li class="active;"><a href="#">First Page</a></li>
-                       <li><a href="#">1</a></li>
-                       <li><a href="#">2</a></li>
-                       <li><a href="#">3</a></li>
-                       <li><a href="#">4</a></li>
-                       <li><a href="#">5</a></li>
-                       <li><a href="#">Last Page</a></li>
+
+                   <?php
+                
+                    if (!isset($_GET['p_cat'])){
+
+                        if (!isset($_GET['cat'])){
+
+                            $per_page=6;
+                            if(isset($_GET['page'])){
+                                $page = $_GET['page'];
+                                
+                                else{
+
+                                    $page=1;
+
+                                }
+                                $start_from = ($page=1)* $per_page;
+
+                            }
+                        }
+                    }
+                
+                    ?>
+
                    </ul>
                </center>
                

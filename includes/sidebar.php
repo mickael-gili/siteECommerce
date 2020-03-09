@@ -6,11 +6,8 @@
     <div class="panel-body"><!-- panel-body Begin -->
         <ul class="nav nav-pills nav-stacked category-menu"><!-- nav nav-pills nav-stacked category-menu Begin -->
 
-                <li><a href="#">Super star 2020</a></li>
-                <li><a href="#">Predator 20</a></li>
-                <li><a href="#">Football</a></li>
-                <li><a href="#">Running</a></li>
-                <li><a href="#">Basketball</a></li>
+            <?php getPCats(); ?>
+            
             
         </ul><!-- nav nav-pills nav-stacked category-menu Finish -->
     </div><!-- panel-body Finish -->
@@ -25,11 +22,8 @@
     
     <div class="panel-body"><!-- panel-body Begin -->
         <ul class="nav nav-pills nav-stacked category-menu"><!-- nav nav-pills nav-stacked category-menu Begin -->
-            
-            <li><a href="#">Hommes</a></li>
-            <li><a href="#">Femmes</a></li>
-            <li><a href="#">Enfants</a></li>
-            <li><a href="#">Autres</a></li>
+
+        <?php getCats(); ?>
             
         </ul><!-- nav nav-pills nav-stacked category-menu Finish -->
     </div><!-- panel-body Finish -->

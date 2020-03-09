@@ -6,10 +6,9 @@
                <h4>Pages</h4>
                 
                 <ul><!-- ul Begin -->
-                    <li><a href="cart.php">Mon panier</a></li>
-                    <li><a href="contact.php">Nous contacter</a></li>
-                    <li><a href="shop.php">Shop</a></li>
-                    <li><a href="checkout.php">Mon compte</a></li>
+
+                    <?php getPCats(); ?>
+                    
                 </ul><!-- ul Finish -->
                 
                 <hr>
@@ -28,7 +27,7 @@
             <div class="com-sm-6 col-md-3"><!-- col-sm-6 col-md-3 Begin -->
                 
                 <h4>Catégories en top des ventes</h4>
-                <!-- ul begin -->
+                <ul><!-- ul begin -->
                     <?php 
                         
                         $get_p_cats = "select * from product_categories";
