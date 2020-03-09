@@ -138,7 +138,7 @@ include("fonctions/functions.php");
                        
                        <h3><a href="#">Meilleur offre</a></h3>
                        
-                       <p>Les meilleurs chaussures du marché à bas prix </p>
+                       <p>Les meilleurs huiles essentielles du marché à bas prix </p>
                        
                    </div><!-- box same-height Finish -->
                    
