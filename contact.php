@@ -1,3 +1,10 @@
+<?php 
+
+include("includes/db.php");
+include("fonctions/functions.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
