@@ -57,7 +57,7 @@
         
         <input type="file" name="c_image" class="form-control form-height-custom">
         
-        <img class="img-responsive" src="customer_images/erika.jpg alt="Costumer Image">
+        <img class="img-responsive" src="customer_images/ph_profil.jpg alt="Costumer Image">
         
     </div><!-- form-group Finish -->
     

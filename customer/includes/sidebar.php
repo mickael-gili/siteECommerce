@@ -4,7 +4,7 @@
         
         <center><!--  center  Begin  -->
             
-            <img src="customer_images/erika.jpg" alt="Mdev Profile">
+            <img src="customer_images/ph_profil.jpg" alt="Mdev Profile">
             
         </center><!--  center  Finish  -->
         
@@ -12,7 +12,7 @@
         
         <h3 align="center" class="panel-title"><!--  panel-title  Begin  -->
             
-            Name: Miss Erika
+            Name: Mickaël 
             
         </h3><!--  panel-title  Finish -->
         
